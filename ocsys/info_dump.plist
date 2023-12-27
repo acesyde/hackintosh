@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CPU</key>
+	<array>
+		<dict>
+			<key>Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz</key>
+			<dict>
+				<key>Cores</key>
+				<integer>4</integer>
+				<key>Threads</key>
+				<integer>4</integer>
+				<key>SSE</key>
+				<string>SSE4.2</string>
+				<key>SSSE3</key>
+				<string>Supported</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Motherboard</key>
+	<dict>
+		<key>Model</key>
+		<string>Q170T</string>
+		<key>Manufacturer</key>
+		<string>ASUSTeK COMPUTER INC.</string>
+	</dict>
+	<key>GPU</key>
+	<array>
+		<dict>
+			<key>Intel(R) HD Graphics 530</key>
+			<dict>
+				<key>Device ID</key>
+				<string>0x1912</string>
+				<key>Vendor</key>
+				<string>0x8086</string>
+				<key>PCI Path</key>
+				<string>PciRoot(0x0)/Pci(0x2,0x0)</string>
+				<key>ACPI Path</key>
+				<string>\_SB.PCI0.GFX0</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Memory</key>
+	<array>
+		<dict>
+			<key>CT16G4SFD824A (Part-Number)</key>
+			<dict>
+				<key>Type</key>
+				<string>DDR4</string>
+				<key>Slot</key>
+				<dict>
+					<key>Bank</key>
+					<string>BANK 0</string>
+					<key>Channel</key>
+					<string>DIMM_A1</string>
+				</dict>
+				<key>Frequency (MHz)</key>
+				<string>2133 MHz</string>
+				<key>Manufacturer</key>
+				<string>CRUCIAL</string>
+				<key>Capacity</key>
+				<string>16384MB</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>CT16G4SFD824A (Part-Number)</key>
+			<dict>
+				<key>Type</key>
+				<string>DDR4</string>
+				<key>Slot</key>
+				<dict>
+					<key>Bank</key>
+					<string>BANK 2</string>
+					<key>Channel</key>
+					<string>DIMM_B1</string>
+				</dict>
+				<key>Frequency (MHz)</key>
+				<string>2133 MHz</string>
+				<key>Manufacturer</key>
+				<string>CRUCIAL</string>
+				<key>Capacity</key>
+				<string>16384MB</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Network</key>
+	<array>
+		<dict>
+			<key>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</key>
+			<dict>
+				<key>Device ID</key>
+				<string>0x8168</string>
+				<key>Vendor</key>
+				<string>0x10EC</string>
+				<key>PCI Path</key>
+				<string>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</string>
+				<key>ACPI Path</key>
+				<string>\_SB.PCI0.RP06.PXSX</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Ethernet Connection (2) I219-LM</key>
+			<dict>
+				<key>Device ID</key>
+				<string>0x15B7</string>
+				<key>Vendor</key>
+				<string>0x8086</string>
+				<key>PCI Path</key>
+				<string>PciRoot(0x0)/Pci(0x1f,0x6)</string>
+				<key>ACPI Path</key>
+				<string>\_SB.PCI0.GLAN</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Audio</key>
+	<array>
+		<dict>
+			<key>Realtek ALC887</key>
+			<dict>
+				<key>Device ID</key>
+				<string>0x0887</string>
+				<key>Vendor</key>
+				<string>0x10EC</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Unknown Sound Device</key>
+			<dict>
+				<key>Device ID</key>
+				<string>0x2809</string>
+				<key>Vendor</key>
+				<string>0x8086</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Storage</key>
+	<array>
+		<dict>
+			<key>Kingston DataTraveler 102</key>
+			<dict>
+				<key>Type</key>
+				<string>Unspecified</string>
+				<key>Connector</key>
+				<string>USB</string>
+				<key>Location</key>
+				<string>External</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>CT2000BX500SSD1</key>
+			<dict>
+				<key>Type</key>
+				<string>Solid State Drive (SSD)</string>
+				<key>Connector</key>
+				<string>Serial ATA (SATA)</string>
+				<key>Location</key>
+				<string>Internal</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>KXG50ZNV256G TOSHIBA</key>
+			<dict>
+				<key>Type</key>
+				<string>NVMe</string>
+				<key>Connector</key>
+				<string>PCI Express</string>
+				<key>Location</key>
+				<string>Internal</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>CT2000BX500SSD1</key>
+			<dict>
+				<key>Type</key>
+				<string>Solid State Drive (SSD)</string>
+				<key>Connector</key>
+				<string>Serial ATA (SATA)</string>
+				<key>Location</key>
+				<string>Internal</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

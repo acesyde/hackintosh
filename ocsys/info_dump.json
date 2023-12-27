@@ -1,0 +1,114 @@
+{
+    "CPU": [
+        {
+            "Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz": {
+                "Cores": 4,
+                "Threads": 4,
+                "SSE": "SSE4.2",
+                "SSSE3": "Supported"
+            }
+        }
+    ],
+    "Motherboard": {
+        "Model": "Q170T",
+        "Manufacturer": "ASUSTeK COMPUTER INC."
+    },
+    "GPU": [
+        {
+            "Intel(R) HD Graphics 530": {
+                "Device ID": "0x1912",
+                "Vendor": "0x8086",
+                "PCI Path": "PciRoot(0x0)/Pci(0x2,0x0)",
+                "ACPI Path": "\\_SB.PCI0.GFX0"
+            }
+        }
+    ],
+    "Memory": [
+        {
+            "CT16G4SFD824A (Part-Number)": {
+                "Type": "DDR4",
+                "Slot": {
+                    "Bank": "BANK 0",
+                    "Channel": "DIMM_A1"
+                },
+                "Frequency (MHz)": "2133 MHz",
+                "Manufacturer": "CRUCIAL",
+                "Capacity": "16384MB"
+            }
+        },
+        {
+            "CT16G4SFD824A (Part-Number)": {
+                "Type": "DDR4",
+                "Slot": {
+                    "Bank": "BANK 2",
+                    "Channel": "DIMM_B1"
+                },
+                "Frequency (MHz)": "2133 MHz",
+                "Manufacturer": "CRUCIAL",
+                "Capacity": "16384MB"
+            }
+        }
+    ],
+    "Network": [
+        {
+            "RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller": {
+                "Device ID": "0x8168",
+                "Vendor": "0x10EC",
+                "PCI Path": "PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)",
+                "ACPI Path": "\\_SB.PCI0.RP06.PXSX"
+            }
+        },
+        {
+            "Ethernet Connection (2) I219-LM": {
+                "Device ID": "0x15B7",
+                "Vendor": "0x8086",
+                "PCI Path": "PciRoot(0x0)/Pci(0x1f,0x6)",
+                "ACPI Path": "\\_SB.PCI0.GLAN"
+            }
+        }
+    ],
+    "Audio": [
+        {
+            "Realtek ALC887": {
+                "Device ID": "0x0887",
+                "Vendor": "0x10EC"
+            }
+        },
+        {
+            "Unknown Sound Device": {
+                "Device ID": "0x2809",
+                "Vendor": "0x8086"
+            }
+        }
+    ],
+    "Storage": [
+        {
+            "Kingston DataTraveler 102": {
+                "Type": "Unspecified",
+                "Connector": "USB",
+                "Location": "External"
+            }
+        },
+        {
+            "CT2000BX500SSD1": {
+                "Type": "Solid State Drive (SSD)",
+                "Connector": "Serial ATA (SATA)",
+                "Location": "Internal"
+            }
+        },
+        {
+            "KXG50ZNV256G TOSHIBA": {
+                "Type": "NVMe",
+                "Connector": "PCI Express",
+                "Location": "Internal"
+            }
+        },
+        {
+            "CT2000BX500SSD1": {
+                "Type": "Solid State Drive (SSD)",
+                "Connector": "Serial ATA (SATA)",
+                "Location": "Internal"
+            }
+        }
+    ]
+}
