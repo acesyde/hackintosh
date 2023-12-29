@@ -18,19 +18,19 @@
 
 ## What works ?
 
-| Service                | State |
-| ---------------------- | ----- |
-| HDMI                   | ?     |
-| DVI                    | ?     |
-| Ethernet               | ?     |
-| iGPU                   | ?     |
-| DRM                    | ?     |
-| USB                    | ?     |
-| Sleep                  | ?     |
-| iCloud                 | ?     |
-| iMessage and FaceTime  | ?     |
-| Handoff and Continuity | ?     |
-| Mac App Store          | ?     |
+| Service                | State              |
+| ---------------------- | ------------------ |
+| HDMI                   | :white_check_mark: |
+| Hardware acceleration  | :white_check_mark: |
+| Ethernet               | :white_check_mark: |
+| iGPU                   | :white_check_mark: |
+| DRM                    | ?                  |
+| USB                    | :white_check_mark: |
+| Sleep                  | ?                  |
+| iCloud                 | ?                  |
+| iMessage and FaceTime  | ?                  |
+| Handoff and Continuity | ?                  |
+| Mac App Store          | :white_check_mark: |
 
 ## Installation
 
@@ -38,7 +38,9 @@
 
 1. Download [balenaEtcher](https://www.balena.io/etcher/) and the [macOS Big sur 11.0 Image](https://www.olarila.com/topic/6278-olarila-vanilla-images-macos-installer/) (⚠️ It's recommanded to use an Ad Blocker ⚠️).
 2. Open balenaEtcher, select the `.raw` image you downloaded earlier, select the USB you want to use and click "Flash".
+
 > **⚠️ THIS WILL ERASE ALL THE DATA PRESENT ON YOUR USB, PLEASE BACKUP IMPORTANTS FILES !**
+
 3. Once the flash is successfully completed, you will need to mount the EFI of your USB (search on Google if you need help).
 4. Open the EFI of your USB and **delete everything** (the root of the EFI should be blank).
 5. [Download the latest version of this EFI](https://github.com/acesyde/hackintosh/releases/latest) and paste the "EFI" folder at the root of the USB
@@ -56,8 +58,8 @@ To use this EFI, you will need to setup the SMIOS.
 3. Once the script is running, pick the option 1 for downloading MacSerial.
 4. Pick option 3 for selecting the SMBIOS and enter `iMac17,1` (case sensitive).
 
-> This will give you an output similar to the following : 
-> 
+> This will give you an output similar to the following :
+>
 > ```
 > #####################################################
 > #              iMac17,1 SMBIOS Info                 #
@@ -80,43 +82,50 @@ To use this EFI, you will need to setup the SMIOS.
     - For `Generic -> ROM`, we use the MAC Address of the network interface, in all lowercase, and without `:`
 
 > **ℹ️ For example :**
+>
 > - **MAC :** `00:16:CB:00:11:22`
 > - **ROM :** `0016cb001122`
 >
 >**⚠️ NOTE AND WARNINGS :**
+>
 > - You need to have the [latest version of Python](https://www.python.org/downloads/) installed to run GenSMBIOS.
 > - You and you alone are responsible for your Apple ID, read the guide carefully and take full responsibility if you screw up. Dortania, me and any other guides are not held accountable for what you do.
 
 ### Setup the BIOS
+>
 >**ℹ️ NOTE :**
+>
 > - All of these options may not be present in your BIOS, it is recommended to match as closely as possible but don't be too concerned if many of these options are not available in your BIOS.
 > - It is recommended to change the language of your BIOS to English while configuring it. You can put it back in your preferred language once the changes have been made.
 
 | ❌ You should disable | ✅ You should enable |
-|-----------------------|----------------------|
-| Fast Boot             | VT-x                 |
-| Secure Boot           | Above 4G Decoding    |
-| Serial/COM Port       | Hyper-Threading      |
-| Parallel Port         | Execute Disable Bit  |
-| VT-d                  | EHCI/XHCI Handoff    |
-| CSM                   |                      |
-| Thunderbolt           |                      |
-| Intel SGX             |                      |
-| Intel Platform Trust  |                      |
-| CFG Lock              |                      |
+| -------------------- | ------------------- |
+| Fast Boot            | VT-x                |
+| Secure Boot          | Above 4G Decoding   |
+| Serial/COM Port      | Hyper-Threading     |
+| Parallel Port        | Execute Disable Bit |
+| VT-d                 | EHCI/XHCI Handoff   |
+| CSM                  |                     |
+| Thunderbolt          |                     |
+| Intel SGX            |                     |
+| Intel Platform Trust |                     |
+| CFG Lock             |                     |
 
-|                🛠️ Settings you should change              |
-|-----------------------------------------------------------|
-| **OS Type :** `Windows 8.1/10 UEFI Mode` (or `Other OS`)  |
-| **DVMT Pre-Allocated (iGPU Memory) :** `128MB` or higher  |
-| **SATA Mode :** `AHCI`                                    |
+| 🛠️ Settings you should change                             |
+| -------------------------------------------------------- |
+| **OS Type :** `Windows 8.1/10 UEFI Mode` (or `Other OS`) |
+| **DVMT Pre-Allocated (iGPU Memory) :** `128MB` or higher |
+| **SATA Mode :** `AHCI`                                   |
 
 ### Post-Install
+
 1. Mount the EFI of the hard disk on which macOS is installed.
 2. Mount the EFI of the USB you used to install macOS.
 3. Copy all the contents of the EFI partition from the USB to the EFI of the hard disk where macOS is installed.
+
 > It should look like this :
 > ![EFI-directory-Screenshot](/Images/EFI-directory-Screenshot.png)
+
 4. You can now boot directly from your Hard Drive.
 
 ## Credits
