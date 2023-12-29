@@ -8,8 +8,8 @@
 | iGPU                  | ✅     |
 | DRM                   | ✅     |
 | USB                   | ✅     |
-| Power management      | ❌     |
-| Sleep                 | ❌     |
-| iCloud                | ❌     |
+| Power management      | ✅     |
+| Sleep                 | ✅     |
+| iCloud                | ✅     |
 | iMessage and FaceTime | ❌     |
 | Mac App Store         | ✅     |
