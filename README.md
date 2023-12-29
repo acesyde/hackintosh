@@ -16,6 +16,13 @@
 | Integrated Graphics | Intel HD Graphics 530           |
 | Monitor 1           | LG 35WN75CP-W                   |
 
+## Versions
+
+| MacOS   | Version | Link |
+| ------- | ------- | ---- |
+| Big Sur | 11.7.10 |  [Readme](big-sur/README.md)    |
+| Ventura | 13.6.3  |  [Readme](ventura/README.md)    |
+
 
 ### Setup the BIOS
 >
